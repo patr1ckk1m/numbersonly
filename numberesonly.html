@@ -3,6 +3,18 @@
   <head>
       <script = "javascript">
 
+          var newArray = numbersOnly([1, "apple", -3, "orange", 0.5])
+          function numbersOnly(items){
+            var newArray = [];
+            for (var i = 0;i < items.length; i++){
+              if (typeof items[i] === "number"){
+                    newArray.push(items[i]);
+
+              }
+            }
+            return newArray;
+          }
+          console.log(newArray);
       </script>
 
   </head>
